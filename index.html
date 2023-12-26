@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giorgi Gagnidze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./411808504_1463021087588208_273182590486882741_n.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body id="top">
+    <header>
+        <div class="navbar">
+            <p id="name">Giorgi Gagnidze</p>
+        </div>
+        <div class="navbar" id="navbar">
+            <nav id="top">
+                <ul id="navul">
+                    <li class="myli" id="myli1"><a href="#">Home</a></li>
+                    <li class="myli" id="myli2"><a href="#">About</a></li>
+                    <li class="myli" id="myli3"><a href="#abm">About Me</a></li>
+                    <li class="myli" id="myli4"><a href="http://127.0.0.1:5500/Me/Contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h1 id="aboutme">Hi i'm <span class="auto-type"></span></h1>
+            <h1 id="cse">Learning In <b>GOA</b></h1>
+            <p id="specialized">Specialized in <b class="myb">Cyber Security</b> And <b class="myb">Web Development</b></p>
+        </div>
+        <div id="myimage">
+            <img id="broderedimage" src="./411808504_1463021087588208_273182590486882741_n.jpg" alt="Photo Don't Added Here" width="350px">
+        </div>
+        <div id="a-aboutme">
+            <a id="a-primary" href="https://www.facebook.com/profile.php?id=100072526356583">Contact Me</a>
+            <a id="a-secondary" href="http://127.0.0.1:5500/Porfolio/index.html">About Me</a>
+        </div>
+        <!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  -->
+        <div>
+            <div class="wrapper">
+                <div class="button">
+                   <div class="icon">
+                      <a href="https://www.facebook.com/profile.php?id=100072526356583"><i class="fab fa-facebook-f"></i></a>
+                   </div>
+                   <span>Facebook</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <a href="https://www.instagram.com/_ggioo____/"><i class="fab fa-instagram"></i></a>
+                   </div>
+                   <span>Instagram</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <a href="https://github.com/giogagnidze"><i class="fab fa-github"></i></a>
+                   </div>
+                   <span>GitHub</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <a href="https://www.youtube.com/@Goal_Oriented_Academy__GOA"><i class="fab fa-youtube"></i></a>
+                   </div>
+                   <span >YouTube</span>
+                </div>
+             </div>
+          
+        </div>
+        <!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  -->
+        <div>
+            <a id="ontop" href="#top">&#x2191</a>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1 id="abm" class="knowledge"><b>Knowledge:</b></h1>
+            <p class="knowledge">1. <b>Python</b></p>
+            <p class="knowledge">2. <b>HTML</b></p>
+            <p class="knowledge">3. <b>CSS</b></p>
+            <p class="knowledge">4. <b>Web Development</b></p>
+            <p class="knowledge">5. <b>Cyber Security Expert</b></p>
+            <h1 id="academy"><b>Academy</b></h1>
+            <p id="goa">Im Learning In <b>Goal Oriented Academy</b>.</p>
+            <p id="goabest">The <b>Best Academy</b> In World</p>
+            <p id="interested">If You Are Interested Visit</p>
+            <a id="fb" href="https://www.facebook.com/nika11keshelava">GOA Facebook</a>
+            <a id="yt" href="https://www.youtube.com/@Goal_Oriented_Academy__GOA">GOA YouTube</a>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div id="copy">
+            <p>&copy; Giorgi Gagnidze</p>
+            <a id="mail" href="https://mail.google.com/mail/u/0/#inbox">giogagnie@gmail.com</a>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["The Code Crafter", "Cyber Security Expert", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 70,
+            loop: true
+        })
+        var pos = 0;
+        var direction = 1;
+        var box = document.getElementById("academy");
+        var t = setInterval(move, 5);
+
+        function move() {
+            if (pos >= 300) {
+                direction = -1; 
+            } else if (pos <= 0) {
+                direction = 1;
+            }
+
+            pos += direction;
+            box.style.left = pos + "px";
+        }
+    </script>
+</body>
+</html>
